@@ -1,17 +1,53 @@
+# Python Tool Skeleton
+
 This is just an example skeleton for building a project or tool in Python. I'm creating this skeleton because I keep copying ``setup.py`` file from my earlier projects.
 
-Python Tool Skeleton
----------------------
-Assuming you installed ``Python`` and ``pipreqs``, run the following commands to complete your ``setup.py``:
+## Prerequisites
 
-* ``pipreqs path/to/Python-Tool-Skeleton``
+* Python 3
+* pipreqs
 
-The above command will create a requirements.txt file in the root folder. Copy those requirements and paste them into your setup.py file in install_requires list.
+If you don't have ``pipreqs`` installed in your environment, use the package manager [pip](https://pip.pypa.io/en/stable/) to install ``pipreqs`` as follows:
 
-Now, once you are done with your project and want to ship it as a compressed file, run the following commands to create a distribution file:
+```bash
+$ pip install pipreqs
+```
 
-* ``cd path/to/Python-Tool-Skeleton``
+## Usage
 
-* ``python setup.py sdist``
+Clone this repository:
+
+```bash
+$ git clone https://github.com/raviprakashgiri/Python-Tool-Skeleton
+```
+
+Complete ``setup.py`` file and make necessary changes. Once you have changed the project description in ``setup.py``, add any dependencies your project has:
+
+```bash
+$ pipreqs path/to/Python-Tool-Skeleton
+```
+
+The above command will create a ``requirements.txt`` file in Python-Tool-Skeleton. Copy the contents of ``requirements.txt`` and paste into ``install_requires`` list of your setup.py file. Delete ``requirements.txt`` thereafter.
+
+Change the project name to the one you want:
+
+```bash
+$ mv Python-Tool-Skeleton/Python-Tool-Skeleton Python-Tool-Skeleton/<your project name>
+$ mv Python-Tool-Skeleton <your project name>
+```
+
+Create python files and write all your code under ``<your project name>/<your project name>`` folder. Once you have completed your project, run the following: 
+
+* ``$ cd path/to/Python-Tool-Skeleton``
+
+* ``$ python setup.py sdist``
 
 The above commands will create a dist directory where you can find your distribution build with files per your ``MANIFEST.in``.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

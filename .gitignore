@@ -97,6 +97,7 @@ venv.bak/
 # Rope project settings
 .ropeproject
 .keep
+.gitkeep
 
 # mkdocs documentation
 /site
